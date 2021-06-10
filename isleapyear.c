@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
   int year = atoi(argv[1]);
-  if ((year % 4 == 0) && (year % 100 != 0))
+  if ((year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0)))
   {
     printf("%d", year);
     printf(" was a leap year \n");
